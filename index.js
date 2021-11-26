@@ -32,7 +32,7 @@ db.connect((err)=>
 app.get("/", function(req, res){
     db.query("Select * from friends",(err,rows,fields)=>{
         if(!err)
-        res.render("AddFriend")
+        res.render("AddFriend");
         else
         console.log(err);
     })
