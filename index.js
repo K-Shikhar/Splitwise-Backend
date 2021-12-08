@@ -3,7 +3,6 @@ const bodyParser = require("body-parser");
 const mysql=require('mysql');
 const app=express();
 
-
 app.set('view engine','ejs');
 app.use(bodyParser.urlencoded({extended:true}));
 
@@ -37,8 +36,6 @@ app.get("/", function(req, res){
         console.log(err);
     })
   });
-
-
   app.post("/AddFriend",function(req,res)
   {
     const {data}=req.body;
