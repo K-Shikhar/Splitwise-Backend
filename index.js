@@ -8,7 +8,6 @@ app.use(bodyParser.urlencoded({extended:true}));
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
-
 const db=mysql.createConnection({
   host:'localhost',
   user:'root',
